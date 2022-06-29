@@ -71,13 +71,13 @@ You can find the installation instructions for your operating system from the fo
 
 - NORMAL - For navigation and going to other modes (default)
 
-- COMMAND - For running ex-commands | <kbd>:</kbd>
+- COMMAND - For running user and ex-commands | <kbd>:</kbd>
 
 - INSERT - For typing text | <kbd>i</kbd> <kbd>I</kbd>
 
 - VISUAL - For selecting text | <kbd>v</kbd> <kbd>V</kbd> <kbd>CTRL-v</kbd>
 
-- REPLACE - For replacing text, not that useful | <kbd>r</kbd> <kbd>R</kbd>
+- REPLACE - For replacing text | <kbd>r</kbd> <kbd>R</kbd>
 
 <small>Help Docs</small>
 
@@ -107,9 +107,15 @@ or
 ```
 
 <br/>
+
+> <small>TIP: Pressing <kbd>Tab</kbd> after `:help ` will give you autocompletion</small>
+
 <br/>
 
-> TIP: Pressing <kbd>Tab</kbd> after `:help ` will give you autocompletion
+Vim/Neovim also comes with a step-by-step guide. You can access it by running
+
+- `vimtutor` inside terminal
+- `:Tutor` inside vim/neovim
 
 ---
 
@@ -173,7 +179,7 @@ or
 
 ```bash
 :[range]g[lobal]/{pattern}/[cmd]
-:[range]g![lobal]/{pattern}/[cmd]
+:[range]g[lobal]!/{pattern}/[cmd]
 :[range]v[global]/{pattern}/[cmd]
 ```
 
