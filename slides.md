@@ -42,8 +42,7 @@ hideInToc: true
 - To be fast and more efficient
 - To edit text on a remote server
 - If you hate your mouse
-- Want to flex your vim magic
-- And don't want your pc to be a heater
+- And don't want your PC to be a heater
 
 **Myself**: I am using Neovim for >3.5 years after trying and failing multiple times.
 
