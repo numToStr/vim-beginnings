@@ -194,10 +194,9 @@ Vim/Neovim also comes with a step-by-step guide. You can access it by running
 
 # Buffers & Windows
 
-**Buffer** is a file loaded into memory for editing. Think of it as a tab.
+**Buffer** is a file loaded into memory for editing.
 
-**Window** is a viewport onto a buffer. You can use multiple windows on one
-buffer, or several windows on different buffers. Think of this is as splits.
+**Window** is a viewport onto a buffer. You can use multiple windows on one buffer, or several windows on different buffers.
 
 #### Navigating buffers/windows
 
@@ -205,7 +204,7 @@ buffer, or several windows on different buffers. Think of this is as splits.
 
 - `:bprev` - Go to previous buffer
 
-- `:b {bufname}` - Go to a specific buffer
+- `:buffer {bufname}` - Go to a specific buffer
 
 - <kbd>CTRL-w {h,j,k,l}</kbd> - Go to left/down/up/right window
 
@@ -219,7 +218,7 @@ buffer, or several windows on different buffers. Think of this is as splits.
 
 # Registers
 
-Registers are spaces in memory that Vim uses to store some text or operation details. Each of these spaces has an identifier so that it can be accessed later. Most of the time you won't be interacting with the registers directly but it is important to know about it.
+Registers are spaces in memory that Vim uses to store some text or operation details. Each of these spaces has an identifier so that it can be accessed later. Generally yanked text, deleted text, and macros are stored in the registers.
 
 - Unnamed - Used by Vim for storing the recent yanked text.
 - Named - We can use it for our purposes.
@@ -270,7 +269,7 @@ Macros are kind of a record and replay mechanism for text. You can record a sequ
 
 - **Play** - Press <kbd>@{register}</kbd> to play the macro stored at that particular `register`
 
-<small>And yes, you can't pause the recording</small>
+<small>And you can't pause and resume the recording</small>
 
 **Example**: <kbd>qa</kbd> (Records at `a`) and <kbd>@a</kbd> (Plays from `a`)
 
