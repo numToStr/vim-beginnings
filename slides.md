@@ -17,7 +17,7 @@ hideInToc: true
 
 # Contents
 
-<Toc style="margin-left: 1rem" />
+<Toc />
 
 <br/>
 
